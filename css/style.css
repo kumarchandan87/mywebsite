@@ -1,0 +1,574 @@
+
+/* ***********************************IMPORINTING FONT********************************** */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap');
+
+*{
+    font-family: 'Source Sans Pro','Poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all 0.2s linear;
+}
+
+html{
+    overflow-x: hidden;
+    font-size:100%;
+}
+
+
+
+/* ****************************************************ALL BUTTONS******************************************  */
+
+/* ****************************************************MENU BUTTONS***************************************** */
+
+.header .menu-btn i {
+    font-size:2rem;
+    padding:1rem;
+    color:white;
+    display:none;
+}
+
+#checkbox {
+    display: none;
+}
+
+
+/* *********************************************COURSE BUTTON*************************************** */
+.course-btn {
+    font-size: 1.3rem;
+    background-color:rgb(87, 162, 187);
+    color:blue;
+    border-radius: 3rem;
+    padding:.3rem 1.8rem;
+}
+.course-btn:hover{
+    background-color: blue;
+    color: white;
+}
+
+/* ********************************************HEADER START*****************************************  */
+.header{
+    /* z-index: 10000; */
+    background-color:blue;
+    position:sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 2%;
+}
+.header ul li a{
+    text-decoration: none;
+    font-size:1.5rem;
+    padding:0.625rem;
+    color:white;
+    display:block;
+}
+
+.header .logo {
+    font-size: 2rem;
+    font-weight: bolder;
+    color:white;
+}
+
+.logo i{
+    color:rgb(255,43,0);
+}
+.header .logo i{
+    border: none;
+    padding:.25rem;
+}
+
+.header ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.header ul li i{
+    font-size: 1.4rem;
+    padding: 0 .5rem;
+    align-items: center;
+}
+
+.header ul li a:hover{
+    background-color: rgb(255, 0, 140);
+}
+
+
+/* *******************************************HOME SECTION START*******************************  */
+
+.home-section{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    /* justify-content: space-between; */
+    text-align: center;
+}
+
+.home-section img{
+    width: 100%;
+    height: 45rem;
+}
+
+.home-section .home-image{
+    flex: 1 1 45rem;
+}
+
+.home-section .home-content{
+    flex: 1 1 45rem;
+}
+
+.home-content h3{
+    font-size:2rem;
+}
+
+.home-content p{
+    font-size: 1.5rem;
+    padding: .5rem 0;
+    margin-bottom: 1.8rem;
+}
+
+
+/* ***********************************COURSE SECTION******************************** */
+.course-section{
+    /* background-color:rgba(8, 8, 8, 0.959); */
+    padding: 2rem;
+    text-align: center;
+}
+.course-section h3{
+    font-size: 3rem;
+    font-weight:bold;
+    padding:2rem;
+}
+
+
+.course-container{
+    padding:2rem 10%;
+    display: grid;
+    grid-template-columns:repeat(auto-fill, minmax(15rem, 1fr));
+    gap:1.5rem;
+}
+
+
+.course-container .course-box{
+    text-align: center;
+    background-color: #f5f5f5;
+    border-radius:1rem;
+    padding: 2rem;
+}
+
+.course-container img{
+    height:10rem;
+    width:10rem;
+}
+.course-container .course-box:hover{
+    background-color:#d6d6d6;
+}
+
+.course-box h4{
+    font-size:1.5rem;
+    color:Black;
+    font-weight: bold;
+    text-decoration: none;
+    padding:2rem .5rem 0rem .5rem;
+}
+/* .course-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    justify-content: center;
+    text-align: center;
+    padding:0rem 0rem 2rem 0rem;
+}
+
+.course-container img{
+    height: 10rem;
+    width: 10rem;
+}
+
+.course-container .course-box{
+    margin: 1rem;
+    background-color:#f5f5f5;
+    padding:2rem;
+    border-radius: 1rem;
+    flex: 1 1 15rem;
+}
+
+
+.course-container .course-box:hover{
+    background-color:#d6d6d6;
+}
+
+.course-box h4{
+    font-size:1.5rem;
+    color:Black;
+    font-weight: bold;
+    text-decoration: none;
+    padding:2rem .5rem 0rem .5rem;
+} */
+
+/* *************************************REGISTRATION FORME***************************************** */
+.form-section{
+    display:flex;
+    /* height:100%; */
+    width:100%;
+    /* width:auto; */
+    justify-content:center;
+    /* place-items: center; */
+    align-items:center;
+    padding:10% 0;
+}
+
+.f-container{
+    width:24rem;
+    background-color:cyan;
+    border-radius:.6rem;
+}
+
+.f-container h3{
+    font-size:1.5rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.f-container form{
+    margin: 2rem;
+    padding: 0 1rem ;
+}
+.form .f-data{
+    padding: 1rem;
+}
+
+.f-data input{
+    padding: .5rem;
+    border-radius:.4rem;
+}
+
+.input{
+    width:100%;
+}
+
+.f-data #textarea{
+    /* height:5rem !important; */
+    padding: .5rem;
+    border-radius:.4rem;
+}
+
+.f-data #submit{
+    font-size: 1rem;
+    border-radius:3rem;
+}
+
+.f-data #submit:hover{
+    background-color: blue;
+    color:white;
+}
+
+
+
+
+
+
+
+
+
+
+/* ****************************************************FOOTER START*****************  */
+
+.footer{
+    background-color: #ebebeb;
+    padding: 2rem 1.5rem 0 1.5rem;
+}
+
+.fo-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15.625rem,1fr));
+    gap:2rem;
+}
+
+.fo-box h3{
+    font-size:1.3rem;
+}
+.fo-box a{
+    display:block;
+    padding: .25rem 0;
+    color: black;
+    font-size:1.2rem;
+}
+
+.fo-box a:hover{
+    color: rgb(255, 0, 140);
+    padding-left: .25rem;
+}
+
+.fo-box i{
+    color: blue;
+    padding-right: 0.25rem;
+}
+
+.fo-box #email{
+    color:rgb(150, 1, 1);
+}
+
+.fo-box #phone{
+    color:rgb(8,3,2);
+}
+
+.fo-box #insta{
+    color:rgb(250, 4, 45);
+}
+
+.fo-box #location{
+    color: rgb(255, 115, 0);
+}
+
+/* .fo-box span{
+    font-size:1.2rem;
+    font-weight: bold;
+} */
+
+.credit p{
+    font-size:1rem;
+    text-align: center;
+    padding: 1rem 0rem;
+    border-top: 1px solid black;
+}
+
+.credit a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.credit a:hover{
+    color: blue;
+}
+
+
+
+/* *********************************************MEDIA QUARY************************************************* */
+
+@media only screen and (max-width: 900px){
+
+    html{
+        font-size:80%;
+        overflow-x: hidden;
+    }
+
+        /* ***********NAV BAR AND MENU********** */
+    .header ul{
+        z-index: -10000;
+        position: fixed;
+        top: 4.025rem;
+        display: block;
+        background-color:rgba(8, 8, 8, 0.959);
+        height:100vh;
+        width: 100%;
+        left: -100%;
+        padding-top: .5rem;
+        align-items: center;
+    }
+
+    #checkbox:checked ~ ul{
+        left:0;
+    }
+
+    #checkbox:checked ~.menu-btn i:before{
+        content:"\f00d";
+    }
+
+    .header .menu-btn i{
+        display: block;
+    }
+
+    /* ***********HOME SECTION************ */
+    .home-section img{
+        width: 100%;
+        height: 39rem;
+    }
+
+    .home-content{
+        text-align: center;
+    }
+
+    .home-content h3{
+        font-size:3rem;
+    }
+    
+    .home-content p{
+        font-size: 2rem;
+    }
+
+    /* ******************************COURSE SECTION************************ */
+
+    .course-box h4{
+        font-size:1.8rem;
+    }
+
+    /* **************************FOOTER SECION***********  */
+
+    .fo-box h3{
+        font-size:1.8rem;
+    }
+
+    .fo-box a,p{
+        font-size: 1.5rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    html{
+        font-size:75%;
+        overflow-x: hidden;
+    }
+
+    /* ***********NAV BAR AND MENU********** */    
+    .header ul{
+        top: 4.025rem;
+    }
+
+    /* ***********HOME SECTION************ */
+    .home-section img{
+        width: 100%;
+        height: 42rem;
+    }
+
+    /* **************************FOOTER SECION***********  */
+
+    .fo-box h3{
+        font-size:1.6rem;
+    }
+}
+
+
+@media (max-width:600px) {
+    html{
+        font-size: 72%;
+        overflow-x: hidden;
+    }
+
+    /* ***********HOME SECTION************ */
+    .home-section img{
+        width: 100%;
+        height: 46rem;
+    }
+
+    .home-content h3{
+        font-size:2.2rem;
+    }
+    
+    .home-content p{
+        font-size: 1.6rem;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    html{
+        font-size: 70%;
+        overflow-x: hidden;
+    }
+
+    .header ul{
+        top: 4.025rem;
+    }
+
+
+    /* ***********HOME SECTION************ */
+    .home-section img{
+        width: 100%;
+        height: 27.5rem;
+    }
+
+    .home-content h3{
+        font-size:1.8rem;
+    }
+    
+    .home-content p{
+        font-size: 1.2rem;
+    }
+
+
+    /* **************************FOOTER SECION***********  */
+
+    .fo-box h3{
+        font-size:1.6rem;
+    }
+
+    .fo-box a,p{
+        font-size: 1.4rem;
+    }
+}
+
+
+
+@media (max-width: 382px){
+    html{
+        font-size:70%;
+        overflow-x: hidden;
+    }
+
+    /* ***********NAV BAR AND MENU********** */    
+    .header ul{
+        top: 4.025rem;
+    }
+
+    /* ***********HOME SECTION************ */
+    .home-section img{
+        width: 100%;
+        height: 48rem;
+    }
+
+    .home-content h3{
+        font-size:1.6rem;
+    }
+    
+    .home-content p{
+        font-size: 1.2rem;
+    }
+
+    /* ******************************COURSE SECTION************************ */
+
+    .course-section h3{
+        font-size: 2.5rem;
+    }
+    .course-box h4{
+        font-size:1.6rem;
+    }
+
+
+    /* **************************FOOTER SECION***********  */
+
+    .fo-box h3{
+        font-size:1.5rem;
+    }
+
+    .fo-box a,p{
+        font-size: 1.3rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
